@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guess The Number</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Guess The Number</h1>
+
+    <div id="game">
+        <input id="player-name" placeholder="Enter your name" />
+        <button onclick="addPlayer()">Start Game</button>
+
+        <div id="guess-section" style="display: none;">
+            <input id="guess" type="number" placeholder="Enter guess" />
+            <button onclick="submitGuess()">Submit Guess</button>
+        </div>
+
+        <button onclick="resetGame()">Reset Game</button>
+
+        <div id="result"></div>
+        <div id="players"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
